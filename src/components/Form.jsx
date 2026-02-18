@@ -1,4 +1,5 @@
 import {useState} from "react";
+import './Form.css';
 
 function Form(props){
     // State to hold the data of our form
@@ -27,8 +28,9 @@ function Form(props){
                 name="searchterm"
                 onChange={handleChange}
                 value={formData.searchterm}
+                className="input"
                 />
-                <input type="submit" value="submit" />
+                <input type="submit" value="submit"  className="button"/>
             </form>
         </div>
     );
